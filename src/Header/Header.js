@@ -7,6 +7,7 @@ export const Header = () => {
                 Company Logo
             </h1>
             <button>About Us</button>
+            <button>Schedule Tour</button>
         </header>
     )
 }
