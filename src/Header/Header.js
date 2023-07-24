@@ -4,8 +4,9 @@ export const Header = () => {
     return (
         <header>
             <h1>
-                Test Header
+                Company Logo
             </h1>
+            <button>About Us</button>
         </header>
     )
 }
