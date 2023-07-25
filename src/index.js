@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 import * as ReactDOMClient from 'react-dom/client';
-
+import { Header } from './Header/Header';
 
 const Landing = () => {
 
   return (
-    <h1>Test</h1>
+    <Header/>
   )}
 
 const container = document.getElementById('root');
