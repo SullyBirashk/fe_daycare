@@ -10,6 +10,7 @@ export const Header = () => {
                 <Nav className='mr-auto'>
                     <Navbar.Brand href='#'>About Us</Navbar.Brand>
                     <Navbar.Brand href='#'>Schedule Tour</Navbar.Brand>
+                    <Navbar.Brand href='#'>Contact Us</Navbar.Brand>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
