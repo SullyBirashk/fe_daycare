@@ -1,13 +1,10 @@
 import React from 'react';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 
 export const Header = () => {
     return (
-        <header>
-            <h1>
-                Company Logo
-            </h1>
-            <button>About Us</button>
-            <button>Schedule Tour</button>
-        </header>
+        <Navbar bg='dark'>
+            
+        </Navbar>
     )
 }
