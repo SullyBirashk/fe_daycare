@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 
 export const Header = () => {
     return (
@@ -13,6 +13,8 @@ export const Header = () => {
                     <Navbar.Brand href='#'>Contact Us</Navbar.Brand>
                 </Nav>
             </Navbar.Collapse>
+            <Navbar.Brand href='#'></Navbar.Brand>
+
         </Navbar>
     )
 }
