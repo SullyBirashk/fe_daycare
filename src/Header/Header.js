@@ -1,20 +1,32 @@
 import React from 'react';
-import { Navbar, Nav, Button } from 'react-bootstrap';
+import { Navbar, Nav, Button, Offcanvas, Container, NavDropdown, Form } from 'react-bootstrap';
+import logo from '../Images/company_logo.png'
+import './Header.css'
 
 export const Header = () => {
     return (
-        <Navbar bg='dark' expand='lg'>
-            <Navbar.Toggle aria-controls='navbarNav' />
-            <Navbar.Brand href='#'>Holly Tree Daycare</Navbar.Brand>
-            <Navbar.Collapse id='navbarNav'>
-                <Nav className='mr-auto'>
+        <Navbar bg='light' expand='sm'>
+            <div>
+                <Navbar.Toggle className='mx-2' aria-controls='navbarNav' />
+                <Navbar.Brand className='mx-2' href='#'>
+                    <img className='logo' src={logo} alt="" />
+                </Navbar.Brand>
+            </div>
+            
+            <Navbar.Offcanvas
+                id={`offcanvasNavbar-expand-sm`}
+                aria-labelledby={`offcanvasNavbarLabel-expand-sm`}
+                placement="end"
+            >
+                <Offcanvas.Header closeButton />
+                <Offcanvas.Body>
+                    <Nav className="justify-content-end flex-grow-1 pe-3">
                     <Navbar.Brand href='#'>About Us</Navbar.Brand>
-                    <Navbar.Brand href='#'>Schedule Tour</Navbar.Brand>
-                    <Navbar.Brand href='#'>Contact Us</Navbar.Brand>
-                </Nav>
-            </Navbar.Collapse>
-            <Navbar.Brand href='#'></Navbar.Brand>
-
+                    <Navbar.Brand href="#action2">Schedule Tour</Navbar.Brand>
+                    <Navbar.Brand href="#action3">Contact Us</Navbar.Brand>
+                    </Nav>
+                </Offcanvas.Body>
+            </Navbar.Offcanvas>
         </Navbar>
     )
 }
