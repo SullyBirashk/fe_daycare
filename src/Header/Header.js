@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Button, Offcanvas, Container, NavDropdown, Form } from 'react-bootstrap';
-import logo from '../Images/company_logo.png'
+import logo from '../assets/images/company_logo.png'
 import './Header.css'
 
 export const Header = () => {
