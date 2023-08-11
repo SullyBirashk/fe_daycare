@@ -3,8 +3,7 @@ import { Navbar, Nav, Offcanvas } from 'react-bootstrap';
 import logo from '../assets/images/company_logo.png'
 import './Header.css'
 
-export const Header = () => {
-    return (
+export const Header = () => 
         <Navbar bg="light" expand="sm">
             <div>
                 <Navbar.Toggle className="mx-2" aria-controls="navbarNav" />
@@ -28,5 +27,3 @@ export const Header = () => {
                 </Offcanvas.Body>
             </Navbar.Offcanvas>
         </Navbar>
-    )
-}
