@@ -1,6 +1,7 @@
 import React from 'react';
 import * as ReactDOMClient from 'react-dom/client';
 import { Header } from './Header/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Landing = () => {
 
