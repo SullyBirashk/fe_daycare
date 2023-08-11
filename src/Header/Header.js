@@ -13,8 +13,8 @@ export const Header = () =>
             </div>
             
             <Navbar.Offcanvas
-                id={"offcanvasNavbar-expand-sm"}
-                aria-labelledby={"offcanvasNavbarLabel-expand-sm"}
+                id="offcanvasNavbar-expand-sm"
+                aria-labelledby="offcanvasNavbarLabel-expand-sm"
                 placement="end"
             >
                 <Offcanvas.Header closeButton />
