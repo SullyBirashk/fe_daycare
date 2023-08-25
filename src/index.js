@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider, Route, Link} from "react-router-dom";
 import { About } from './About/About';
 import { Schedule } from './Schedule/Schedule';
+import { Contact } from './Contact/Contact';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/schedule",
     element: (<Schedule/>),
+  },
+  {
+    path: "/contact",
+    element: (<Contact/>),
   }
 ]);
 
