@@ -2,13 +2,14 @@ import React from 'react';
 import * as ReactDOMClient from 'react-dom/client';
 import { Header } from './Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { createBrowserRouter, RouterProvider, Route, Link} from "react-router-dom";
 
-const Landing = () => {
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (<Header/>),
+  },
+]);
 
-  return (
-    <Header/>
-  )}
-
-const container = document.getElementById('root');
-const root = ReactDOMClient.createRoot(container);
-root.render(<Landing/>)
+const root = ReactDOMClient.createRoot(document.getElementById('root'));
+root.render(<RouterProvider router={router} />)
